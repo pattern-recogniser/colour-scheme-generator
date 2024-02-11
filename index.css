@@ -9,26 +9,29 @@ body{
 }
 #mode-selector{
     border: solid 1px black;
-    display: inline;
     border-radius: 1em;
-    padding: 0.25em 1em;
     cursor: pointer;
-    margin-right: 3em;
-    margin-left: auto;
-    width: 3em;
-}
+    justify-self: center;
+    align-self: center;
+    padding: 0.5em 1em;
 
+}
+header{
+    display: grid;
+    width: 50em;
+    margin: 0 auto;
+    grid-template-columns: 90% 10%;
+}
 #mode-selector:hover{
-    background-color: aquamarine;
+    background-color: #666666;
 }
 
-#container{
+.container{
     padding: 0;
-    background-color: #1F293A;
     width: 50em;
     height: 40em; 
     margin: 1em auto;
-
+    background-color: #1F293A;
 }
 #selector-div{
     display: grid;
@@ -73,9 +76,16 @@ button{
     margin-top: 2em;
 }
 .light{
-    background-color: '#D1D5DB';
-    color: '#2B283A'
+    background-color: #D1D5DB;
+    color: #2B283A;
 }
 .hidden{
-    display: inline;
+    visibility: hidden;
+}
+.container-light{
+    background-color: #FFFF;
+}
+.light-btn{
+    background-color: #FFFF;
+    border: 1px solid gray;
 }

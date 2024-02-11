@@ -1,6 +1,7 @@
 const selectedColorEl = document.getElementById("selected-color")
 const getColorBtn = document.getElementById("get-color-btn")
 const resultDiv = document.getElementById("result-div")
+const selectorDiv = document.getElementById("selector-div")
 const selectedPalette = document.getElementById("type")
 const modeSelectorEl = document.getElementById("mode-selector")
 const containerEl = document.getElementById("container")
@@ -41,14 +42,11 @@ function renderColorScheme(colors){
 
 modeSelectorEl.addEventListener("click", switchMode)
 function switchMode(){
+    darkModeEl.classList.toggle("hidden")
+    lightModeEl.classList.toggle("hidden")
 
-        // ligthModeEl.classList.toggle("hidden")
-        // darkModeEl.classList.toggle("hidden")
+    containerEl.classList.toggle("container-light")
+    document.body.classList.toggle("light")
+    getColorBtn.classList.toggle("light-btn")
 
-    // if current state is light, switch to dar
-    // Get current state? how 
-    // Who are the elements that need to toggle? 
-    // container
-    // body text color
-    // button background color
 }
